@@ -1,0 +1,33 @@
+{
+  "name": "auth-javascript",
+  "version": "1.0.0",
+  "description": "Register and Login JavaScript",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "authentication",
+    "javascript",
+    "passport",
+    "auth",
+    "express js",
+    "register",
+    "login"
+  ],
+  "author": "Ade Putra",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.13.0",
+    "mongoose": "^6.0.11",
+    "nodemon": "^2.0.14",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0"
+  }
+}

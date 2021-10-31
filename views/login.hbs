@@ -1,0 +1,63 @@
+<div class='container'>
+  <div class='row d-flex justify-content-center'>
+    <div class='col-md-4'>
+      <div class='card mt-5'>
+        <div class='card-body'>
+
+          {{#if sessionFlash.message}}
+
+            <div
+              class='alert {{sessionFlash.type}} alert-dismissible fade show'
+              role='alert'
+            >
+              <ul>
+                {{#each sessionFlash.message}}
+                  <li>
+                    {{this}}
+                  </li>
+                {{/each}}
+              </ul>
+              <button
+                type='button'
+                class='btn-close'
+                data-bs-dismiss='alert'
+                aria-label='Close'
+              ></button>
+            </div>
+
+          {{/if}}
+
+          <h5 class='text-center'>Login</h5>
+          <form action='/login' method='post'>
+            <div class='mb-3'>
+              <label class='form-label'>Email </label>
+              <input
+                type='email'
+                name='email'
+                class='form-control'
+                placeholder='Enter your email'
+                id='email'
+                value='{{sessionFlash.oldInput.email}}'
+                required
+              />
+            </div>
+            <div class='mb-3'>
+              <label class='form-label'>Password</label>
+              <input
+                type='password'
+                name='password'
+                class='form-control'
+                placeholder='Enter your password'
+                id='password'
+                required
+              />
+            </div>
+            <div class='d-grid gap-2'>
+              <button type='submit' class='btn btn-primary'>Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
