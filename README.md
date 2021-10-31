@@ -1,6 +1,6 @@
 # Auth Javascript
 
-### Register and Login with Express js, MongoDB, Passport js
+### Register and Login with MVC concept: Express js, MongoDB, Passport js and etc.
 
 <br />
 <br />
